@@ -32,6 +32,10 @@ header h2 {
     padding: 1ex 10vw;
 }
 
+#content-wrapper div {
+    margin: 10px 0;
+}
+
 #server-information {
     display: flex;
 }
