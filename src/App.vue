@@ -1,6 +1,4 @@
 <template>
-  <h1>A Vue App</h1>
-  <div id="nav"><router-link to="/">Home</router-link></div>
   <router-view />
 </template>
 
@@ -11,5 +9,10 @@
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body {
+  margin: 0;
 }
 </style>
