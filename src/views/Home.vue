@@ -4,7 +4,7 @@
     <div class="border-wrapper">
       <div class="content">
         <p>
-          NSE Master Race is a small project started by Felix Hendrix and
+          NSE Master Race is a small project started by Felix Hendriks and
           <a href="https://wouterdebruijn.nl/">Wouter de Bruijn</a>. We created
           a Minecraft server where current and former NSE students can play
           together.
@@ -19,7 +19,7 @@
       <div class="content">
         <b>Start of puzzle</b><br /><br />
         <code>
-          Some times you have to take a deeper look.
+          Sometimes you have to take a deeper look.
         </code>
       </div>
     </div>
