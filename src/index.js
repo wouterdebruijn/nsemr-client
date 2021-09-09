@@ -18,7 +18,7 @@ const serverIpCopy = (event) => {
 
     if (event.clipboardData) {
         event.clipboardData.setData("text/plain", serverIpElement.textContent)
-        createPop("Coppied!", serverIpElement);
+        createPop("Copied!", serverIpElement);
     }
 }
 
