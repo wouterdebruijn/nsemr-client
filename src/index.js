@@ -1,0 +1,46 @@
+let serverIpElement
+
+window.addEventListener("load", () => {
+    serverIpElement = document.getElementById("server-ip");
+
+    console.log("yes")
+
+    setClickEvents();
+})
+
+const setClickEvents = (elements) => {
+    serverIpElement.addEventListener("click", () => {
+        document.execCommand("copy");
+    });
+
+    serverIpElement.addEventListener("copy", serverIpCopy)
+}
+
+const serverIpCopy = (event) => {
+    event.preventDefault();
+
+    if (event.clipboardData) {
+        event.clipboardData.setData("text/plain", serverIpElement.textContent)
+        createPop("Coppied!", serverIpElement);
+    }
+}
+
+const createPop = (text, parrent) => {
+    const existingChild = document.getElementById("pop-up");
+    if (existingChild)
+        parrent.removeChild(existingChild);
+
+    const child = document.createElement("span");
+    child.className = "pop-up"
+    child.id = "pop-up"
+    child.innerText = text;
+    parrent.appendChild(child);
+    timeoutRemove(parrent, "pop-up")
+}
+
+const timeoutRemove = (parrent, childId) => {
+    setTimeout(() => {
+        const child = document.getElementById(childId);
+        parrent.removeChild(child);
+    }, 2500)
+}
